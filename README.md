@@ -6,7 +6,7 @@ An Android photo management app for organizing photos into albums, tagging them,
 
 ## Prerequisites
 
-- Android Studio (for SDK and emulator)
+- Android Studio (for SDK/emulator)
 - Java 11
 - Android SDK 36
 
