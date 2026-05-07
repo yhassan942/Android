@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:padding="8dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RadioGroup android:id="@+id/rgType" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <RadioButton android:id="@+id/rbPerson" android:text="Person" android:checked="true" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <RadioButton android:id="@+id/rbLocation" android:text="Location" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </RadioGroup>
+        <AutoCompleteTextView android:id="@+id/actvValue" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:hint="Type prefix" />
+        <Button android:id="@+id/btnAddCriteria" android:text="Add" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <ToggleButton android:id="@+id/toggleAnd" android:textOn="AND" android:textOff="OR" android:checked="true" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <ListView android:id="@+id/lvCriteria" android:layout_width="match_parent" android:layout_height="wrap_content" android:dividerHeight="4dp"/>
+    <Button android:id="@+id/btnDoSearch" android:text="Search" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <Button android:id="@+id/btnBackFromSearch" android:text="Back" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/rvResults" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+</LinearLayout>
+
